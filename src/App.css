@@ -1,0 +1,11 @@
+.display::-webkit-scrollbar{
+  display: none;
+}
+@font-face {
+  font-family: font-1;
+  src: url(./BebasNeue-Regular.otf);
+}
+.bebus{
+  font-family: font-1;
+  letter-spacing: 1px;
+}
