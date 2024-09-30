@@ -26,7 +26,7 @@ const Catergory = () => {
             return  <div
             key={index}
             onClick={()=> navigate(`/animedet/${item.mal_id}`)}
-            className="md:w-[15vw] w-[40vw] flex flex-col rounded-xl overflow-hidden cursor-pointer mb-6 transition-all hover:opacity-50"
+            className="md:w-[15vw] w-[36vw] flex flex-col rounded-xl overflow-hidden cursor-pointer mb-6 transition-all hover:opacity-50"
           >
             <img
               className="w-full h-full object-cover"

@@ -24,7 +24,7 @@ const Search = () => {
               <div
                 key={index}
                 onClick={()=> navigate(`/animedet/${item.mal_id}`)}
-                className="md:w-[16vw] w-[38vw] flex flex-col rounded-md overflow-hidden cursor-pointer mb-6 transition-all hover:opacity-50"
+                className="md:w-[16vw] w-[36vw] flex flex-col rounded-md overflow-hidden cursor-pointer mb-6 transition-all hover:opacity-50"
               >
                 <img
                   className="w-full h-full object-cover"

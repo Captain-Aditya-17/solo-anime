@@ -13,13 +13,15 @@ const Sidebar = () => {
          <h1 className='text-4xl'><IoMdSearch /></h1>
          </Link>
      </div>
-      <div className='w-full h-full flex flex-col gap-y-3 rounded-md p-2 bg-[#242424]'>
-       <Link to='/trending' className='bg-white w-[4vw] h-[4vw] rounded-md overflow-hidden cursor-pointer'>
+      <div className='w-full h-full flex flex-col items-center gap-y-3 rounded-md p-2 bg-[#242424]'>
+       <Link to='/trending' className='bg-white w-[4vw] h-[4vw] rounded-md overflow-hidden cursor-pointer relative'>
         <img className='w-full h-full flex object-cover' src="https://png.pngtree.com/png-clipart/20220921/ourmid/pngtree-fire-logo-png-image_6209600.png" alt="" />
         </Link>
        <Link to='/upcoming' className='bg-white w-[4vw] flex items-center justify-center h-[4vw] rounded-md overflow-hidden cursor-pointer'>
        <h1 className='text-5xl font-bold'>U</h1>
         </Link>
+         {/* <Link to='/' className='text-5xl rotate-90 whitespace-nowrap text-white font-bold'><span className='text-[#E50014]'>Solo</span> Anime</Link> */}
+         <Link to='/' className='text-6xl text-white rotate-90 absolute bottom-[10rem] cursor-pointer whitespace-nowrap font-bold'><span className='text-[#E50014]'>SOLO</span> ANIME</Link>
       </div>
     </div>
   )

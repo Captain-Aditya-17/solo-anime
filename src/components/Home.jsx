@@ -30,7 +30,7 @@ const Home = () => {
               <div
               onClick={()=> navigate(`/animedet/${item.mal_id}`)}
                 key={index}
-                className="md:w-[17vw] w-[40vw] flex flex-col rounded-xmd overflow-hidden cursor-pointer mb-6 transition-all hover:opacity-50"
+                className="md:w-[17vw] w-[38vw] flex flex-col rounded-xmd overflow-hidden cursor-pointer mb-6 transition-all hover:opacity-50"
               >
                 <img
                   className="w-full h-full object-cover"
