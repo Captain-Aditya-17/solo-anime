@@ -37,12 +37,11 @@ const Home = () => {
                   src={item.images.jpg.image_url}
                   alt=""
                 />
-                <h1 className="text-white text-xl">
-                  {item.title_english.split(" ").length > 3
-                    ? item.title_english.split(" ").slice(0, 3).join(" ") +
-                      "..."
-                    : item.title_english}
-                </h1>
+             <h1 className="text-white text-xl">
+  {item.title_english && item.title_english.split(" ").length > 3
+    ? item.title_english.split(" ").slice(0, 3).join(" ") + "..."
+    : item.title_english || "No title available"}
+</h1>
               </div>
             );
           })
