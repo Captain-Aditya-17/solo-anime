@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import bleach from '../assets/bleach.jpg'
 import aot from '../assets/aot.jpg'
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const { homePage } = useContext(AnimeData);
   const navigate = useNavigate()

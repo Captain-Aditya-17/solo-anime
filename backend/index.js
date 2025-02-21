@@ -9,7 +9,7 @@ connectToDb();
 const app = express();
 
 app.use(cors({
-    origin: 'https://solo-anime.vercel.app/',
+    origin: process.env.FRONTEND_URL || 'https://solo-anime.vercel.app',
     credentials: true
 }));
 app.use(express.json());
