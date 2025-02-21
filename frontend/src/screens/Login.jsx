@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import Backapi from "../utils/Backapi";
 
 const Login = () => {
@@ -72,6 +72,7 @@ const Login = () => {
                 placeholder="********"
               />
             </div>
+            <Link to='/register'>register</Link>
             <button className="px-8 py-2 w-full bg-[#E50014] text-xl rounded-md">
               Login
             </button>
