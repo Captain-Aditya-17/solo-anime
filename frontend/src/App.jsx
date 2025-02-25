@@ -6,9 +6,6 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
 import { Route, Routes } from 'react-router-dom'
-import Login from './screens/Login'
-import Register from './screens/Register'
-import { UserProvider } from './utils/BackendContext'
 
 const App = () => {
   const navigate = useNavigate()
@@ -32,9 +29,7 @@ const App = () => {
       </div>
     </div>
       </div>
-      <UserProvider>
       <Cont/>
-      </UserProvider>
     </div>
   )
 }
