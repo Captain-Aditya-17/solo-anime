@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import bleach from '../assets/bleach.jpg'
 import aot from '../assets/aot.jpg'
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const { homePage } = useContext(AnimeData);
   const navigate = useNavigate()
   return (
     <div className="w-full h-full bg-black display overflow-scroll">
-      <Link to='/login'>Login</Link>
       <div className="w-full h-[80vh] rounded-xl  overflow-hidden">
         <img
           className="w-full h-full object-cover object-top hidden md:block"

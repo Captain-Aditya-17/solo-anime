@@ -16,6 +16,7 @@ const Context = (props) => {
     const [homePage, sethomePage] = useState(null)
     const [searchData, setsearchData] = useState(null)
     const [upcoming, setupcoming] = useState(null)
+    const [animeId, setanimeId] = useState(null)
     const [value, setvalue] = useState('')
     const homeData = async ()=>{
       try {
@@ -93,7 +94,9 @@ const Context = (props) => {
         searchData, setsearchData,
         change,
         upcoming,
-        allgeners
+        allgeners,
+        animeId,
+        setanimeId
     }
     useEffect(()=>{
       homeData()

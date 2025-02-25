@@ -7,9 +7,6 @@ import Trending from './Trending'
 import Upcoming from './Upcoming'
 import Catergory from './Catergory'
 import AnimeDetail from './AnimeDetail'
-import Login from '../screens/Login'
-import Register from '../screens/Register'
-import Wrapper from '../screens/Wrapper'
 
 const Cont = () => {
   return (
@@ -18,13 +15,7 @@ const Cont = () => {
       <Sidebar/>
       </div>
         <Routes>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/register' element={<Register/>}/>
-          <Route path='/' element={
-            <Wrapper>
-              <Home/>
-            </Wrapper>
-          }/>
+          <Route path='/' element={ <Home/>}/>
           <Route path='/animedet/:id' element={<AnimeDetail/>}/>
           <Route path='/search' element={<Search/>}/>
           <Route path='/trending' element={<Trending/>}/>
